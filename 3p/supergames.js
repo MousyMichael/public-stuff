@@ -5,11 +5,6 @@ var ah = document.querySelector(".easter-egg-imp");
   
   const allGameButtons = document.querySelectorAll("a"); 
   allGameButtons.forEach((b) => {
-    if(b.getAttribute("target") == "_blank") {
-      b.removeAttribute("target"); 
-      return
-    } else {
-      return
-    }
+      b.setAttribute("target","_self"); 
   });
 }
