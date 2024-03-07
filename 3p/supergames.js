@@ -1,8 +1,11 @@
 window.onload = () => {
 var ah = document.querySelector(".easter-egg-imp");
-  ah.innerHTML = 'Did you know unblocked search is not hacking? - MousyM';
-  ah.addEventListener("click", (e) => {
-    alert("wow. you found this.")
-    ah.innerHTML = 'Did you know unblocked search originally had over 10 functions just to open a hidden windows? - MousyM';
+  ah.innerHTML = 'Patches, additional features, and bug fixes by MousyM';
+  
+  const allGameButtons = doucment.querySelectorAll("a"); 
+  allGameButtons.forEach((b) => {
+    if(b.getAttribute("target") == "_blank") {
+      b.removeAttribute("target"); 
+    } 
   });
 }
