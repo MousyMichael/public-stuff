@@ -1,5 +1,5 @@
 window.onload = (e) => {
-  var cache {
+  var cache = {
     url:window.location.href,
     host:window.location.hostname,
   };
@@ -13,10 +13,25 @@ window.onload = (e) => {
   ah.addEventListener("click", (e) => {
     var popup = document.createElement("div"); 
     popup.classList = 'sge-popup';
-    popup.innerHTML = '<div class="sge-inner-popup"><textarea placeholder="Enter HTML code to open in ab window"></textarea><button id="sge-launch">Open</button><button id="sge-close">Close</button></div>';
+    popup.id = 'external-popup';
+    popup.innerHTML = '<div class="sge-inner-popup"><textarea id="datas" placeholder="Enter HTML code to open in ab window"></textarea><button id="sge-launch">Open</button><button id="sge-close">Close</button></div>';
     
     window.document.body.appendChild(popup)
-    
+    var closeBtn = document.getElementById("sge-close"); 
+    var goBtn = document.getElementById("sge-launch"); 
+    goBtn.addEventListener("click", (e) => {
+      var data = document.getElementById("datas").value 
+      var hWin = window.open("","");
+      hWin.document.body.innerHTML = data;
+      hWin.document.body.style.width = '100vw';
+      hWin.document.body.style.height = '100vh';
+      hWin.document.body.style.margin = '0px';
+      hWin.document.body.style.padding = '0px';
 
+      });
+    closeBtn.addEventListener("click", (e) => {
+      var popupToClose = document.getElementById("external-popup");
+      popupToClose.style.display = 'none';
+    });
   });
 }
