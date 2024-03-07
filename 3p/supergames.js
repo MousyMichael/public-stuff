@@ -10,6 +10,7 @@ window.onload = (e) => {
   window.document.head.appendChild(linkStyles)
   
   var ah = document.querySelector(".easter-egg-imp");
+  ah.removeAttribute("onclick"); 
   ah.addEventListener("click", (e) => {
     var popup = document.createElement("div"); 
     popup.classList = 'sge-popup';
