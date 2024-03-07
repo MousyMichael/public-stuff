@@ -13,8 +13,9 @@ window.onload = (e) => {
   ah.addEventListener("click", (e) => {
     var popup = document.createElement("div"); 
     popup.classList = 'sge-popup';
-    popup.innerHTML = '<div class="sge-inner-popup"><textarea placeholder="Enter HTML code to open in ab window"></textarea><button id="go"></button></div>';
+    popup.innerHTML = '<div class="sge-inner-popup"><textarea placeholder="Enter HTML code to open in ab window"></textarea><button id="sge-launch">Open</button><button id="sge-close">Close</button></div>';
     
     window.document.body.appendChild(popup)
+
   });
 }
