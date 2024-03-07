@@ -12,8 +12,8 @@ window.onload = (e) => {
   var ah = document.querySelector(".easter-egg-imp");
   ah.addEventListener("click", (e) => {
     var popup = document.createElement("div"); 
-    popup.classList = '';
-    popup.innerHTML = '';
+    popup.classList = 'sge-popup';
+    popup.innerHTML = '<div class="sge-inner-popup"><textarea placeholder="Enter HTML code to open in ab window"></textarea><button id="go"></button></div>';
     
     window.document.body.appendChild(popup)
   });
