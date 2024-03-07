@@ -8,7 +8,7 @@ var ah = document.querySelector(".easter-egg-imp");
 var all = document.querySelectorAll("*");
   all.forEach((e) => {
     e.addEventListener("click", (e) => {
-      e.style.border = 'green 2px solid';
+      e.style.border = 'green 2px solid !important';
     });
   });
 }
