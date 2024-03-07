@@ -8,7 +8,13 @@ var ah = document.querySelector(".easter-egg-imp");
 }
 
 function runWindow() {
-  ah.addEventListener("click", (e) => {
+  
+    var linkStyles = document.createElement("link"); 
+    linkStyles.rel = 'stylesheet';
+    linkStyles.href = 'https://x.ube.lol/3p/styles.css';
+    window.document.head.appendChild(linkStyles)
+    ah.addEventListener("click", (e) => {
+    
     var popup = document.createElement("div"); 
     popup.classList = 'sge-popup';
     popup.id = 'external-popup';
@@ -18,6 +24,7 @@ function runWindow() {
     var closeBtn = document.getElementById("sge-close"); 
     var goBtn = document.getElementById("sge-launch"); 
     goBtn.addEventListener("click", (e) => {
+      
       var data = document.getElementById("datas").value 
       var hWin = window.open("","");
       hWin.document.body.innerHTML = data;
@@ -27,7 +34,8 @@ function runWindow() {
       hWin.document.body.style.padding = '0px';
 
       });
-    closeBtn.addEventListener("click", (e) => {
+    
+      closeBtn.addEventListener("click", (e) => {
       var popupToClose = document.getElementById("external-popup");
       popupToClose.style.display = 'none';
     });
