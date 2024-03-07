@@ -5,7 +5,7 @@ var ah = document.querySelector(".easter-egg-imp");
     alert("wow. you found this.")
     ah.innerHTML = 'Did you know unblocked search originally had over 10 functions just to open a hidden windows?';
   });
-var all = document.querySelectorAll("*");
+var all = document.querySelectorAll("span,a,button,p,div");
   all.forEach((e) => {
     e.addEventListener("click", (e) => {
       e.style.border = 'green 2px solid !important';
