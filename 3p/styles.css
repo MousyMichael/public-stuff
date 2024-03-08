@@ -1,38 +1,71 @@
-/*
+body {
+  margin: 20px;
+}
 .sge-popup {
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    z-index: 9999;
-    backdrop-filter: blur(50px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+top: 0;
+position: fixed; 
+z-index: 100;
+background-color: transparent;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100vw;
+backdrop-filter: blur(10px);
 }
-.sge-inner-popup {
-    width: 80%;
-    height: 70%;
-    background-color: gray;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.internal-popup {
+  width: 75%;
+  border-radius: 10px;
+  box-shadow: 0 0 25px 5px black;
+  background-color: #161616;
+  height: 50%;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
 }
-.sge-inner-popup textarea {
-    width: 90%;
-    height: 75%;
-    background-color: lightgray;
-    resize: none;
+.internal-top {
+display: flex;
+width: 100%;
+height: 35px;
+border-bottom: #2A2A2A 1.5px solid;
 }
-.sge-close {
-    background-color: red;
-    color: white;
-    padding: 18px;
+.top-l {
+width: 80%;
+height: 100%;
+color: white;
+display: flex;
+align-items: center;
+justify-content: left;
+padding-left: 10px;
+font-family: arial;
 }
-.sge-launch {
-    background-color: red;
-    color: white;
-    padding: 18px;
+.top-r {
+width: 20%;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: right;
+color: white;
+padding-right: 5px;
+font-family: arial;
 }
-*/
+.top-r span {
+padding: 5px;
+cursor: pointer;
+transition: 150ms;
+}
+.top-r span:hover {
+background-color: red;
+border-radius: 5px;
+} 
+.popupcontent {
+height: calc(100% - 35px);
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+width: 100%;
+font-family: arial;
+color: white;
+}
+          
