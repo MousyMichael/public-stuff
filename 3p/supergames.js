@@ -1,3 +1,4 @@
+//Provides bug fixes and additional feature for SuperGames.
 window.onload = () => {
   var allGameElements = document.querySelectorAll("a"); 
   allGameElements.forEach((btn) => {
