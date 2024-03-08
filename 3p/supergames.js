@@ -1,4 +1,5 @@
 //Provides bug fixes and additional features for SuperGames.
+const superGamesCompanionVersion = '1.1';
 window.onload = () => {
   var allGameElements = document.querySelectorAll("a"); 
   allGameElements.forEach((btn) => {
