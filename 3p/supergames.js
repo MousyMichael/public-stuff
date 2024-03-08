@@ -11,6 +11,8 @@ window.onload = () => {
   var hangoutBtn = document.getElementById("mousy"); 
   hangoutBtn.addEventListener("click", sgePopup('Mousys Hangout', 'test'));
 }
+
+//Popup testing
 function sgePopup(pName, pContent) {
 
   var style = document.createElement("link");
