@@ -29,7 +29,7 @@ function sgePopup(pName, pContent) {
   external.id = 'external-popup';
 
   document.body.appendChild(external);
-  document.head.appendChild(style)
+  document.head.appendChild(style);
   
   document.querySelectory(".top-l").innerHTML = pName;
   document.querySelector(".popupcontent").innerHTML = pContent;
