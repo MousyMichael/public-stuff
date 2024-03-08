@@ -1,6 +1,5 @@
 window.onload = () => {
 alert("Hey everyone, games now remain hidden from GoGuardian when launched from a hidden window!");
-
   var allGameElements = document.querySelectorAll("a"); 
   allGameElements.forEach((btn) => {
     var btnTarget = btn.getAttribute("target"); 
@@ -10,4 +9,9 @@ alert("Hey everyone, games now remain hidden from GoGuardian when launched from 
       btn.removeAttribute("target")
     }
   });
+  var hangoutBtn = document.getElementById("mousy"); 
+  hangoutBtn.addEventListener("click", sgePopup("Mousy's Hangout", ""));
+}
+function sgePopup() {
+  
 }
