@@ -1,10 +1,10 @@
 window.onload = () => { 
-	document.getElementById("search-bar").addEventListener("input", (ev) => {
-	if(document.getElementById("search-bar").value < 0) {
+  document.getElementById("search-bar").addEventListener("input", (ev) => {
+      if(document.getElementById("search-bar").value < 0) {
   	document.querySelectorAll(".button h2").forEach((bh) => {
-    	bh.parentElement.parentElement.classList.remove("hidden");
-    });
-  } else {
+    	   bh.parentElement.parentElement.classList.remove("hidden");
+   	});
+      } else {
   	searchElements();
   }
  });
