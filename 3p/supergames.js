@@ -1,18 +1,12 @@
 //Provides bug fixes and additional features for SuperGames.
-const superGamesCompanionVersion = '1.1';
-
 window.onload = () => {
-  var allGameElements = document.querySelectorAll("a"); 
-  allGameElements.forEach((btn) => {
-    var btnTarget = btn.getAttribute("target"); 
-    if(btnTarget == "_blank") {
-      btn.removeAttribute("target")
-    } else {
-      btn.removeAttribute("target")
+  var aref = document.querySelectorAll("a"); 
+  aref.forEach((e) => {
+    if(e.getAttribute("target") == '_blank') {
+      e.removeAttribute("target"); 
+      alert("A has blank"); 
     }
   });
-  var hangoutBtn = document.getElementById("mousy"); 
-  hangoutBtn.addEventListener("click", sgePopup('Mousys Hangout', 'test'));
 }
 
 //Popup testing
