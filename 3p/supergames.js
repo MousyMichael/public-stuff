@@ -1,12 +1,12 @@
-//Provides bug fixes and additional features for SuperGames.
+//Companion file for SuperGames. Provides bug fixes and additional features.
 window.onload = () => {
-  var aref = document.querySelectorAll("a"); 
-  aref.forEach((e) => {
-    if(e.getAttribute("target") == '_blank') {
-      e.removeAttribute("target"); 
-      alert("A has blank"); 
-    }
-  });
+var all = document.querySelectorAll("a"); 
+all.forEach((aa) => {
+	if(aa.getAttribute("target") === '_blank') {
+  	aa.removeAttribute("target");
+  	console.log("tag has blank target")
+  }
+	});
 }
 
 //Popup testing
