@@ -3,8 +3,8 @@
 //Feel free to customize the configuration below
 const sSConf = {
    elemsToSearch:"",
-   queryElement:"",
-	 classToApply:"",
+   queryElement:"", 
+   classToApply:"",
 	 
 };
 
