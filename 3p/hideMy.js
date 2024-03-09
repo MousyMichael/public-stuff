@@ -1,5 +1,5 @@
 function openHiddenWindow(url) {
-    var hWin = window.open("",""); 
+  var hWin = window.open("",""); 
   
   if(hWin) {
     var header = document.createElement("div");
