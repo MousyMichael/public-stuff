@@ -1,10 +1,10 @@
 function openHiddenWindow(url) {
-	var hWin = window.open("",""); 
+    var hWin = window.open("",""); 
   
   if(hWin) {
-  	var header = document.createElement("div");
+    var header = document.createElement("div");
     header.innerHTML = 'This tab is hidden from GoGuardian so your teacher cannot see this page!<span style="font-weight:bold;font-size:14px;color:gray;text-shadow:none;">HideMyWindow Developed By: MousyM</span>';
-   	hs = header.style;
+    hs = header.style;
     hs.display = 'flex';
     hs.flexDirection = 'column';
     hs.justifyContent = 'center';
@@ -17,7 +17,7 @@ function openHiddenWindow(url) {
     hs.backgroundColor = '#161616';
     hs.height = '45px';
     
-  	var contentFrame = document.createElement("iframe")
+    var contentFrame = document.createElement("iframe")
     contentFrame.src = url;
     cfs = contentFrame.style; 
     cfs.width = '100%';
@@ -32,7 +32,7 @@ function openHiddenWindow(url) {
     hWin.document.body.appendChild(header)
     hWin.document.body.appendChild(contentFrame)
   } else {
-  	alert("Oh no! Something went wrong and we can't cloak this window at the moment, please try again later!")
+    alert("Oh no! Something went wrong and we can't cloak this window at the moment, please try again later!")
   }
 
 }
