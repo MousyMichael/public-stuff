@@ -2,11 +2,11 @@
 window.onload = () => {
 var all = document.querySelectorAll("a"); 
 all.forEach((aa) => {
-	if(aa.getAttribute("target") === '_blank') {
-  	aa.removeAttribute("target");
-  	console.log("tag has blank target")
+  if(aa.getAttribute("target") === '_blank') {
+     aa.removeAttribute("target");
+     console.log("tag has blank target")
   }
-	});
+});
 }
 
 //Popup testing
