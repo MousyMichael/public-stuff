@@ -2,9 +2,9 @@
 //This file allows users to search through HTML elements based on an text input. 
 //Feel free to customize the configuration below
 const sSConf = {
-   elemsToSearch:".button h2",
-   queryElementId:"search-bar", 
-   classToApply:"hidden",	 
+   elemsToSearch: ".button h2",
+   queryElementId: "search-bar", 
+   classToApply: "hidden"
 };
 
 
