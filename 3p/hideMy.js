@@ -3,25 +3,25 @@ function openHiddenWindow(url) {
   
   if(hWin) {
     var header = document.createElement("div");
-    header.innerHTML = 'This tab is hidden from GoGuardian so your teacher cannot see this page!<span style="font-weight:bold;font-size:14px;color:gray;text-shadow:none;">HideMyWindow Developed By: MousyM</span>';
+    header.innerHTML = 'This tab is hidden from GoGuardian so your teacher cannot see this page!<span style="font-weight:bold;font-size:16px;color:gray;text-shadow:none;">HideMyWindow Developed By: MousyM</span>';
     hs = header.style;
     hs.display = 'flex';
     hs.flexDirection = 'column';
     hs.justifyContent = 'center';
     hs.alignItems = 'center'
-    hs.fontSize = '18px';
+    hs.fontSize = '20px';
     hs.width = '100%';
     hs.color = 'lime';
     hs.fontFamily = 'arial';
     hs.textShadow = '0 0 15px lime';
     hs.backgroundColor = '#161616';
-    hs.height = '45px';
+    hs.height = '50px';
     
     var contentFrame = document.createElement("iframe")
     contentFrame.src = url;
     cfs = contentFrame.style; 
     cfs.width = '100%';
-    cfs.height = 'calc(100% - 45px)';
+    cfs.height = 'calc(100% - 50px)';
     cfs.border = 'none';
     
     hws = hWin.document.body.style;
