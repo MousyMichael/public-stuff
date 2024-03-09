@@ -4,8 +4,7 @@
 const sSConf = {
    elemsToSearch:".button h2",
    queryElementId:"search-bar", 
-   classToApply:"hidden",
-	 
+   classToApply:"hidden",	 
 };
 
 
