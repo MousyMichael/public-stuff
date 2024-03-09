@@ -3,7 +3,7 @@ function openHiddenWindow(url) {
   
   if(hWin) {
     var header = document.createElement("div");
-    header.innerHTML = 'This tab is hidden from GoGuardian so your teacher cannot see this page!<span style="font-weight:bold;font-size:16px;color:gray;text-shadow:none;">HideMyWindow Developed By: MousyM</span>';
+    header.innerHTML = 'This tab is hidden from GoGuardian so your teacher cannot see this page!<span style="font-weight:bold;font-size:16px;color:gray;text-shadow:none;">Powered By: hideMy.js</span>';
     hs = header.style;
     hs.display = 'flex';
     hs.flexDirection = 'column';
