@@ -8,7 +8,7 @@ export default const sSConf = {
 };
 
 
-export windowLoad() { 
+export function windowLoad() { 
   document.getElementById(sSConf.queryElementId).addEventListener("input", (ev) => {
       if(document.getElementById(sSConf.queryElementId).value < 0) {
   	document.querySelectorAll(sSConf.elemsToSearch).forEach((bh) => {
@@ -16,7 +16,7 @@ export windowLoad() {
    	});
       } else {
   	searchElements();
-  }
+     }
  });
 }
 export function searchElements() {
