@@ -1,7 +1,7 @@
 //Welcome to SimpleSearch for SuperGames. 
 //This file allows users to search through HTML elements based on an text input. 
 //Feel free to customize the configuration below
-const sSConf = {
+export default const sSConf = {
    elemsToSearch: ".button h2",
    queryElementId: "search-bar", 
    classToApply: "hidden"
@@ -19,7 +19,7 @@ export windowLoad() {
   }
  });
 }
-function searchElements() {
+export function searchElements() {
 var allE = document.querySelectorAll(sSConf.elemsToSearch);
 var query = document.getElementById(sSConf.queryElementId).value;
 allE.forEach((ae) => {
