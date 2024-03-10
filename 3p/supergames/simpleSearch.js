@@ -8,7 +8,7 @@ const sSConf = {
 };
 
 
-window.onload = () => { 
+export windowLoad() { 
   document.getElementById(sSConf.queryElementId).addEventListener("input", (ev) => {
       if(document.getElementById(sSConf.queryElementId).value < 0) {
   	document.querySelectorAll(sSConf.elemsToSearch).forEach((bh) => {
