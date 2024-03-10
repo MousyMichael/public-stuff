@@ -2,4 +2,4 @@
 const globalConfiguration = {};
 
 import sSConf from './simpleSearch.js';
-import {search, windowLoad} from './simpleSearch.js';
+import {searchElements, windowLoad} from './simpleSearch.js';
