@@ -85,7 +85,7 @@ body {
   height: calc(100px * 1.5);
   width: calc(160px * 1.5);
   margin: calc(10px * 1.5);
-  border-radius: calc(10px 1.5);
+  border-radius: calc(10px * 1.5);
 }
 input::placeholder {
   color: lightgray;
