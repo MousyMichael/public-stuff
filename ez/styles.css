@@ -23,24 +23,24 @@ body {
 }
 .top {
   width: 100%;
-  height: 225px;
+  height: calc(225px * 1.5);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .logo {
-  font-size: 25px;
-  text-shadow: 0 0 18px red;
+  font-size: calc(25px * 1.5);
+  text-shadow: 0 0 calc(18px * 1.5) red;
   color: crimson;
-  margin-top: 20px;
+  margin-top: calc(20px * 1.5);
 }
 .sub {
-  margin-top: 2px;
+  margin-top: calc(2px * 1.5);
   color: eggplant;
 }
 .utilts {
-  margin-top: 20px;
+  margin-top: calc(20px * 1.5);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,12 +49,12 @@ body {
   width: 75%;
   text-align: center;
   background-color: var(--almostBlack);
-  padding: 10px;
-  font-size: 15px;
-  box-shadow: inset 0 0 5px -1px black;
+  padding: calc(10px * 1.5);
+  font-size: calc(15px * 1.5);
+  box-shadow: inset 0 0 calc(5px * 1.5) calc(-1px * 1.5) black;
   color: lightgray;
-  border-radius: 15px;
-  margin-top: 10px;
+  border-radius: calc(15px * 1.5);
+  margin-top: calc(10px * 1.5);
 }
 .gameTileHolder {
   width: 100%;
@@ -62,80 +62,80 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   height: 100%;
-  padding-top: 20px;
+  padding-top: calc(20px * 1.5);
 }
 .mid {
   width: 100%;
   height: calc(100% - 180px);
   display: flex;
-  margin-bottom: 15px;
+  margin-bottom: calc(15px * 1.5);
 }
 .opts:hover {
-  outline: 2px solid white;
+  outline: calc(2px * 1.5) solid white;
   color: white;
 }
 .game-tile {
   display: flex;
-  outline: 3px solid var(--textGray);
+  outline: calc(3px * 1.5) solid var(--textGray);
   transition: 125ms;
-  outline-offset: 2px;
+  outline-offset: calc(2px * 1.5);
   overflow: hidden;
   flex-direction: column;
   background-color: transparent;
-  height: 100px;
-  width: 160px;
-  margin: 10px;
-  border-radius: 10px;
+  height: calc(100px * 1.5);
+  width: calc(160px * 1.5);
+  margin: calc(10px * 1.5);
+  border-radius: calc(10px 1.5);
 }
 input::placeholder {
   color: lightgray;
   font-family: 'Anta', sans-serif;
 }
 input {
-  width: 275px;
-  box-shadow: inset 0 0 5px -1px black;
+  width: calc(275px * 1.5);
+  box-shadow: inset 0 0 calc(5px * 1.5) calc(-1px * 1.5) black;
   font-family: 'Anta', sanns-serif;
-  height: 30px;
-  padding-left: 10px;
+  height: calc(30px * 1.5);
+  padding-left: calc(10px * 1.5);
   background-color: var(--almostBlack);
   color: lightgray;
   transition: 200ms;
-  outline: 2px solid var(--selectedGray);
-  outline-offset: 1.5px;
-  border-radius: 25px;
+  outline: calc(2px * 1.5) solid var(--selectedGray);
+  outline-offset: calc(1.5px * 1.5);
+  border-radius: calc(25px * 1.5);
   border: none;
 }
 .opts {
-  margin-left: 10px;
-  box-shadow: inset 0 0 5px -1px black;
+  margin-left: calc(10px * 1.5);
+  box-shadow: inset 0 0 calc(5px * 1.5) calc(-1px * 1.5) black;
   font-family: 'Anta', sanns-serif;
   display: flex;
   justify-content: center;
-  width: 50px;
+  width: calc(50px * 1.5);
   align-items: center;
-  height: 30px;
+  height: calc(30px * 1.5);
   background-color: var(--almostBlack);
   color: lightgray;
   transition: 200ms;
-  outline: 2px solid var(--selectedGray);
-  outline-offset: 1.5px;
-  border-radius: 25px;
+  outline: calc(2px * 1.5) solid var(--selectedGray);
+  outline-offset: calc(1.5px * 1.5);
+  border-radius: calc(25px * 1.5);
   border: none;
 }
 
 .game-name {
   position: absolute;
-  bottom: -30px;
+  bottom: calc(-30px * 1.5);
   background-color: hsla(0, 0%, 9%, 0.75);
   width: 100%;
-  font-size: 14px;
+  font-size: calc(14px * 1.5);
   transition: 125ms;
   font-weight: bold;
   color: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 25px;
+  height: calc(25px * 1.5);
   z-index: 100;
 }
 
@@ -152,15 +152,15 @@ input {
   height: 100%;
 }
 .game-tile:hover > .game-image > .game-name { 
-  bottom: 0px;
+  bottom: calc(0px * 1.5);
 }
 .game-tile:hover { 
-outline: 3px solid white;
-outline-offset: 2px;
+outline: calc(3px * 1.5) solid white;
+outline-offset: calc(2px * 1.5);
 }
 input:focus {
-  outline: white 2px solid;
-  outline-offset: 1.5px;
+  outline: white calc(2px * 1.5) solid;
+  outline-offset: calc(1.5px * 1.5);
 }
 .hidden {
   display: none;
