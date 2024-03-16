@@ -88,10 +88,12 @@ body {
   border-radius: calc(10px * 1.5);
 }
 input::placeholder {
+  font-size: calc(14px * 1.5);
   color: lightgray;
   font-family: 'Anta', sans-serif;
 }
 input {
+  font-size: calc(14px * 1.5);
   width: calc(275px * 1.5);
   box-shadow: inset 0 0 calc(5px * 1.5) calc(-1px * 1.5) black;
   font-family: 'Anta', sanns-serif;
@@ -113,6 +115,7 @@ input {
   justify-content: center;
   width: calc(50px * 1.5);
   align-items: center;
+  font-size: calc(14px * 1.5);
   height: calc(30px * 1.5);
   background-color: var(--almostBlack);
   color: lightgray;
