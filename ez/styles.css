@@ -8,7 +8,9 @@
   --white: white;
   --lightTextGray: lightgray;
 }
-
+.opts span {
+  font-size: calc(14px * 1.5) !important;
+}
 body {
   margin: 0px;
   overflow-x: hidden;
